@@ -15,7 +15,7 @@ userController.post("/signup",async (req,res)=>
         {
                 if(err)
                 {
-                    return res.send("Sign up faild, please try again later ")
+                    return res.send("Signup error  please try again")
                 }
                 const user=new userModel({name,email,password:hash})
                     console.log(user)
